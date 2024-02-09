@@ -44,11 +44,12 @@ int main()
 
 	m = 0;
 	f = 0;
-	i = 0;
+	i = 1;
 	printf("Indicate the number of students:\n");
 	scanf("%d", &al);
 	if (is_digit(al) == 1)
 		return 0;
+	getchar();
 	while (i <= al)
 	{
 		printf("Alumne: %d \n", i);
@@ -62,3 +63,11 @@ int main()
 	printf("Males: %d\n", m);
 	printf("Females: %d\n", f);
 }
+
+/*
+ *Cuando usas scanf para leer un número, presionar "Enter" después de ingresar
+ *el número añade un carácter de nueva línea al búfer de entrada.
+ *Este carácter de nueva línea puede afectar a la siguiente operación de lectura 
+ *de caracteres. Utilizando getchar() después de scanf, puedes consumir ese carácter
+ *de nueva línea, asegurando que la siguiente lectura de caracteres no se vea afectada.
+ * /
