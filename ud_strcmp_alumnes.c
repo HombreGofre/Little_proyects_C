@@ -70,4 +70,4 @@ int main()
  *Este carácter de nueva línea puede afectar a la siguiente operación de lectura 
  *de caracteres. Utilizando getchar() después de scanf, puedes consumir ese carácter
  *de nueva línea, asegurando que la siguiente lectura de caracteres no se vea afectada.
- * /
+ */
